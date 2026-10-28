@@ -1,0 +1,5 @@
+domain           = "<your-domain>"
+my_ip            = "<your-ip>/32"
+external_network = "<external-network>"
+linux_image      = "<linux-image>"
+admin_email      = "<your-email>"

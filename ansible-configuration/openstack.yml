@@ -1,0 +1,8 @@
+plugin: openstack.cloud.openstack
+only_clouds:
+  - <cloud-name>
+expand_hostvars: false
+fail_on_errors: true
+keyed_groups:
+  - key: openstack.metadata.os
+    prefix: os

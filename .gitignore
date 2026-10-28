@@ -1,0 +1,11 @@
+# Your own values, state and secrets stay on your computer
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+tfplan
+group_vars/*/vault.yml
+ansible-key
+ansible-key.pub
+.DS_Store
+__pycache__/

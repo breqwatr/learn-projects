@@ -1,0 +1,2 @@
+external_network = "<external-network>"
+linux_image      = "<linux-image>"

@@ -1,0 +1,78 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  opentofu:
+    name: OpenTofu fmt and validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: opentofu/setup-opentofu@v1
+        with:
+          tofu_version: 1.13.1
+          tofu_wrapper: false
+
+      - name: fmt
+        run: tofu fmt -check -recursive -diff
+
+      # 4.1 reads ~/.ssh/first-instance.pub when it's validated
+      - name: Throwaway SSH key
+        run: mkdir -p ~/.ssh && ssh-keygen -q -t ed25519 -N '' -f ~/.ssh/first-instance
+
+      # -lockfile=readonly fails if a folder's lock file doesn't match its version constraints
+      - name: init and validate
+        run: |
+          for d in $(python3 scripts/tofu_folders.py); do
+            echo "::group::$d"
+            (cd "$d" && tofu init -backend=false -input=false -lockfile=readonly && tofu validate)
+            echo "::endgroup::"
+          done
+
+  ansible:
+    name: Ansible syntax check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Install Ansible
+        run: pip install ansible==14.5.0 pywinrm
+
+      - name: Syntax check
+        working-directory: ansible-configuration
+        run: |
+          for p in provision.yml configure.yml destroy.yml; do
+            ansible-playbook --syntax-check -i localhost, "$p"
+          done
+          python -c "import yaml, sys; [yaml.safe_load(open(f)) for f in sys.argv[1:]]" openstack.yml vars.yml group_vars/*/vars.yml
+
+  checks:
+    name: Lock files, 4.4 vs 4.5 diff and deny-list
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Lock files
+        run: python3 scripts/check_lock_files.py
+
+      - name: 4.4 vs 4.5 diff
+        run: python3 scripts/check_rebuild_diff.py
+
+      - name: Deny-list
+        run: python3 scripts/deny_list.py

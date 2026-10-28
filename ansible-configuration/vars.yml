@@ -1,0 +1,8 @@
+cloud: <cloud-name>
+prefix: ansible
+my_ip: "<your-ip>/32"
+network: default
+external_network: <external-network>
+linux_image: <linux-image>
+windows_image: <windows-image>
+public_key_file: "{{ playbook_dir }}/ansible-key.pub"

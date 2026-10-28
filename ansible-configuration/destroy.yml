@@ -1,0 +1,26 @@
+- name: Remove everything provision.yml created
+  hosts: localhost
+  gather_facts: false
+  vars_files:
+    - vars.yml
+  tasks:
+    - name: Delete the instances, with their root volumes and floating IPs
+      openstack.cloud.server:
+        cloud: "{{ cloud }}"
+        name: "{{ item }}"
+        state: absent
+        delete_ips: true
+        wait: true
+      loop: ["{{ prefix }}-web-01", "{{ prefix }}-win-01"]
+
+    - name: Delete the security group
+      openstack.cloud.security_group:
+        cloud: "{{ cloud }}"
+        name: "{{ prefix }}-access"
+        state: absent
+
+    - name: Delete the key pair
+      openstack.cloud.keypair:
+        cloud: "{{ cloud }}"
+        name: "{{ prefix }}-key"
+        state: absent
