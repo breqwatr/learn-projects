@@ -4,7 +4,7 @@ The code for the tutorials on [learn.breqwatr.cloud](https://learn.breqwatr.work
 
 | Tutorial | Page | Code |
 | --- | --- | --- |
-| 4.1 | [Your first instance, three ways](https://learn.breqwatr.workers.dev/tutorials/first-instance/) | [`first-instance/`](first-instance/) |
+| 4.1 | [Launch your first instances](https://learn.breqwatr.workers.dev/tutorials/first-instance/) | [`first-instance/`](first-instance/) |
 | 4.2 | [OpenTofu fundamentals](https://learn.breqwatr.workers.dev/tutorials/opentofu-fundamentals/) | [`opentofu-fundamentals/`](opentofu-fundamentals/) |
 | 4.3 | [Configuration with Ansible](https://learn.breqwatr.workers.dev/tutorials/ansible-configuration/) | [`ansible-configuration/`](ansible-configuration/) |
 | 4.4 | [A three-tier web app](https://learn.breqwatr.workers.dev/tutorials/three-tier-web-app/) | [`three-tier-web-app/`](three-tier-web-app/) |
