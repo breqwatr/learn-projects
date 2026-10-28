@@ -1,0 +1,42 @@
+when:
+  - event: pull_request
+  - event: push
+    branch: main
+
+variables:
+  - &env
+    OS_AUTH_TYPE: v3applicationcredential
+    OS_AUTH_URL: <auth-url>
+    OS_REGION_NAME: <region>
+    OS_INTERFACE: public
+    OS_IDENTITY_API_VERSION: "3"
+    OS_APPLICATION_CREDENTIAL_ID:
+      from_secret: os_application_credential_id
+    OS_APPLICATION_CREDENTIAL_SECRET:
+      from_secret: os_application_credential_secret
+    PG_CONN_STR:
+      from_secret: pg_conn_str
+    TF_VAR_my_ip:
+      from_secret: my_ip
+    TF_VAR_external_network: <external-network>
+    TF_VAR_linux_image: <linux-image>
+
+steps:
+  - name: check
+    image: ghcr.io/opentofu/opentofu:1.13.1
+    environment: *env
+    commands:
+      - tofu init -input=false
+      - tofu fmt -check -recursive
+      - tofu validate
+      - tofu plan -input=false
+
+  - name: apply
+    image: ghcr.io/opentofu/opentofu:1.13.1
+    environment: *env
+    commands:
+      - tofu init -input=false
+      - tofu apply -input=false -auto-approve
+    when:
+      - event: push
+        branch: main

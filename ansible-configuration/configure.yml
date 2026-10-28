@@ -1,0 +1,34 @@
+- name: Configure Linux web servers
+  hosts: os_linux
+  become: true
+  tasks:
+    - name: Install nginx
+      ansible.builtin.apt:
+        name: nginx
+        update_cache: true
+
+    - name: Publish a page
+      ansible.builtin.copy:
+        content: "Configured by Ansible on {{ inventory_hostname }}\n"
+        dest: /var/www/html/index.html
+
+- name: Configure Windows web servers
+  hosts: os_windows
+  tasks:
+    - name: Install IIS
+      ansible.windows.win_feature:
+        name: Web-Server
+        include_management_tools: true
+
+    - name: Publish a page
+      ansible.windows.win_copy:
+        content: "Configured by Ansible on {{ inventory_hostname }}\r\n"
+        dest: C:\inetpub\wwwroot\index.html
+
+    - name: Allow HTTP through the Windows firewall
+      community.windows.win_firewall_rule:
+        name: HTTP in
+        localport: 80
+        protocol: tcp
+        direction: in
+        action: allow
