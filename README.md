@@ -1,6 +1,6 @@
 # learn-projects
 
-The code for the tutorials on [learn.breqwatr.cloud](https://learn.breqwatr.workers.dev/tutorials/), the Breqwatr Cloud training course. Every file here is the code a tutorial page shows, and every release was run end to end on Breqwatr Cloud before it was tagged.
+The code for the tutorials and How-to pages on [learn.breqwatr.cloud](https://learn.breqwatr.workers.dev/), the Breqwatr Cloud training course and documentation. Every file here is the code a tutorial page shows, and every release was run end to end on Breqwatr Cloud before it was tagged.
 
 | Tutorial | Page | Code |
 | --- | --- | --- |
@@ -13,6 +13,12 @@ The code for the tutorials on [learn.breqwatr.cloud](https://learn.breqwatr.work
 | 4.7 | [Kubernetes on BKS](https://learn.breqwatr.workers.dev/tutorials/kubernetes-on-bks/) | [`kubernetes-on-bks/`](kubernetes-on-bks/) |
 | 4.8 | [Build your own pipeline platform](https://learn.breqwatr.workers.dev/tutorials/pipeline-platform/) | [`pipeline-platform/`](pipeline-platform/) |
 | 4.9 | [Deploy from the pipeline](https://learn.breqwatr.workers.dev/tutorials/deploy-from-pipeline/) | [`deploy-from-pipeline/`](deploy-from-pipeline/) |
+
+The code for How-to pages lives under `how-to/<area>/<slug>/`:
+
+| How-to | Code |
+| --- | --- |
+| [Self-hosted VPN with WireGuard](https://learn.breqwatr.workers.dev/how-to/remote-access/self-hosted-vpn/) | [`how-to/remote-access/self-hosted-vpn/`](how-to/remote-access/self-hosted-vpn/) |
 
 ## Using it
 
