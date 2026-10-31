@@ -1,24 +1,24 @@
 # learn-projects
 
-The code for the tutorials and How-to pages on [the Breqwatr Cloud learning site](https://learn.breqwatr.workers.dev/), the Breqwatr Cloud training course and documentation. Every file here is the code a tutorial page shows, and every release was run end to end on Breqwatr Cloud before it was tagged.
+The code for the tutorials and How-to pages on [learn.breqwatr.cloud](https://learn.breqwatr.cloud/), the Breqwatr Cloud training course and documentation. Every file here is the code a tutorial page shows, and every release was run end to end on Breqwatr Cloud before it was tagged.
 
 | Tutorial | Page | Code |
 | --- | --- | --- |
-| 4.1 | [Launch your first instances](https://learn.breqwatr.workers.dev/tutorials/first-instance/) | [`first-instance/`](first-instance/) |
-| 4.2 | [OpenTofu fundamentals](https://learn.breqwatr.workers.dev/tutorials/opentofu-fundamentals/) | [`opentofu-fundamentals/`](opentofu-fundamentals/) |
-| 4.3 | [Configuration with Ansible](https://learn.breqwatr.workers.dev/tutorials/ansible-configuration/) | [`ansible-configuration/`](ansible-configuration/) |
-| 4.4 | [A three-tier web app](https://learn.breqwatr.workers.dev/tutorials/three-tier-web-app/) | [`three-tier-web-app/`](three-tier-web-app/) |
-| 4.5 | [Rebuild, don't repair](https://learn.breqwatr.workers.dev/tutorials/rebuild-dont-repair/) | [`rebuild-dont-repair/`](rebuild-dont-repair/) |
-| 4.6 | [Object storage with S3 tooling](https://learn.breqwatr.workers.dev/tutorials/object-storage-s3/) | [`object-storage-s3/`](object-storage-s3/) |
-| 4.7 | [Kubernetes on BKS](https://learn.breqwatr.workers.dev/tutorials/kubernetes-on-bks/) | [`kubernetes-on-bks/`](kubernetes-on-bks/) |
-| 4.8 | [Build your own pipeline platform](https://learn.breqwatr.workers.dev/tutorials/pipeline-platform/) | [`pipeline-platform/`](pipeline-platform/) |
-| 4.9 | [Deploy from the pipeline](https://learn.breqwatr.workers.dev/tutorials/deploy-from-pipeline/) | [`deploy-from-pipeline/`](deploy-from-pipeline/) |
+| 4.1 | [Launch your first instances](https://learn.breqwatr.cloud/tutorials/first-instance/) | [`first-instance/`](first-instance/) |
+| 4.2 | [OpenTofu fundamentals](https://learn.breqwatr.cloud/tutorials/opentofu-fundamentals/) | [`opentofu-fundamentals/`](opentofu-fundamentals/) |
+| 4.3 | [Configuration with Ansible](https://learn.breqwatr.cloud/tutorials/ansible-configuration/) | [`ansible-configuration/`](ansible-configuration/) |
+| 4.4 | [A three-tier web app](https://learn.breqwatr.cloud/tutorials/three-tier-web-app/) | [`three-tier-web-app/`](three-tier-web-app/) |
+| 4.5 | [Rebuild, don't repair](https://learn.breqwatr.cloud/tutorials/rebuild-dont-repair/) | [`rebuild-dont-repair/`](rebuild-dont-repair/) |
+| 4.6 | [Object storage with S3 tooling](https://learn.breqwatr.cloud/tutorials/object-storage-s3/) | [`object-storage-s3/`](object-storage-s3/) |
+| 4.7 | [Kubernetes on BKS](https://learn.breqwatr.cloud/tutorials/kubernetes-on-bks/) | [`kubernetes-on-bks/`](kubernetes-on-bks/) |
+| 4.8 | [Build your own pipeline platform](https://learn.breqwatr.cloud/tutorials/pipeline-platform/) | [`pipeline-platform/`](pipeline-platform/) |
+| 4.9 | [Deploy from the pipeline](https://learn.breqwatr.cloud/tutorials/deploy-from-pipeline/) | [`deploy-from-pipeline/`](deploy-from-pipeline/) |
 
 The code for How-to pages lives under `how-to/<area>/<slug>/`:
 
 | How-to | Code |
 | --- | --- |
-| [Self-hosted VPN with WireGuard](https://learn.breqwatr.workers.dev/how-to/remote-access/self-hosted-vpn/) | [`how-to/remote-access/self-hosted-vpn/`](how-to/remote-access/self-hosted-vpn/) |
+| [Self-hosted VPN with WireGuard](https://learn.breqwatr.cloud/how-to/remote-access/self-hosted-vpn/) | [`how-to/remote-access/self-hosted-vpn/`](how-to/remote-access/self-hosted-vpn/) |
 
 ## Using it
 
