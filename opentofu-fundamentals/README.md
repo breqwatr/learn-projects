@@ -1,6 +1,6 @@
 # 4.2 OpenTofu fundamentals
 
-The code for [OpenTofu fundamentals](https://learn.breqwatr.workers.dev/tutorials/opentofu-fundamentals/) on learn.breqwatr.cloud. Follow the page: it explains each file and the order to run things in.
+The code for [OpenTofu fundamentals](https://learn.breqwatr.cloud/tutorials/opentofu-fundamentals/) on learn.breqwatr.cloud. Follow the page: it explains each file and the order to run things in.
 
 The 4.1 build as a reusable project: pinned versions, variables, and a module that builds one instance, called once for each.
 

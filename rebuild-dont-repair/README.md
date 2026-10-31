@@ -1,6 +1,6 @@
 # 4.5 Rebuild, don't repair
 
-The code for [Rebuild, don't repair](https://learn.breqwatr.workers.dev/tutorials/rebuild-dont-repair/) on learn.breqwatr.cloud. Follow the page: it explains each file and the order to run things in.
+The code for [Rebuild, don't repair](https://learn.breqwatr.cloud/tutorials/rebuild-dont-repair/) on learn.breqwatr.cloud. Follow the page: it explains each file and the order to run things in.
 
 The 4.4 application with its data volume protected by `prevent_destroy`, ready to replace instances from code.
 

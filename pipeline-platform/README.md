@@ -1,6 +1,6 @@
 # 4.8 Build your own pipeline platform
 
-The code for [Build your own pipeline platform](https://learn.breqwatr.workers.dev/tutorials/pipeline-platform/) on learn.breqwatr.cloud. Follow the page: it explains each file and the order to run things in.
+The code for [Build your own pipeline platform](https://learn.breqwatr.cloud/tutorials/pipeline-platform/) on learn.breqwatr.cloud. Follow the page: it explains each file and the order to run things in.
 
 Gitea and Woodpecker CI on two instances you own, behind Caddy with Let's Encrypt certificates, with PostgreSQL and a data volume that outlasts rebuilds.
 

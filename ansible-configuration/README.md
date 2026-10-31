@@ -1,6 +1,6 @@
 # 4.3 Configuration with Ansible
 
-The code for [Configuration with Ansible](https://learn.breqwatr.workers.dev/tutorials/ansible-configuration/) on learn.breqwatr.cloud. Follow the page: it explains each file and the order to run things in.
+The code for [Configuration with Ansible](https://learn.breqwatr.cloud/tutorials/ansible-configuration/) on learn.breqwatr.cloud. Follow the page: it explains each file and the order to run things in.
 
 Playbooks that launch a Linux and a Windows instance with the `openstack.cloud` collection, a dynamic inventory, and the configuration of a web server on each: over SSH on Linux and WinRM on Windows.
 
