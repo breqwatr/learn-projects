@@ -1,6 +1,6 @@
 # Self-hosted VPN with WireGuard
 
-The WireGuard files for [Self-hosted VPN with WireGuard](https://learn.breqwatr.workers.dev/how-to/remote-access/self-hosted-vpn/) on learn.breqwatr.cloud. Follow the page: it sets up the VPN instance and explains each line.
+The WireGuard files for [Self-hosted VPN with WireGuard](https://learn.breqwatr.cloud/how-to/remote-access/self-hosted-vpn/) on learn.breqwatr.cloud. Follow the page: it sets up the VPN instance and explains each line.
 
 ## Files
 

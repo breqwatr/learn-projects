@@ -1,6 +1,6 @@
 # 4.1 Launch your first instances
 
-The code for [Launch your first instances](https://learn.breqwatr.workers.dev/tutorials/first-instance/) on learn.breqwatr.cloud. Follow the page: it explains each file and the order to run things in.
+The code for [Launch your first instances](https://learn.breqwatr.cloud/tutorials/first-instance/) on learn.breqwatr.cloud. Follow the page: it explains each file and the order to run things in.
 
 A Linux and a Windows instance, each booting from a volume, with a security group open to your IP and floating IPs. The page also builds them in the Breqwatr Cloud Portal and with the OpenStack CLI; this folder holds the OpenTofu way.
 

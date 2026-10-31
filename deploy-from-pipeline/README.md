@@ -1,6 +1,6 @@
 # 4.9 Deploy from the pipeline
 
-The code for [Deploy from the pipeline](https://learn.breqwatr.workers.dev/tutorials/deploy-from-pipeline/) on learn.breqwatr.cloud. Follow the page: it explains each file and the order to run things in.
+The code for [Deploy from the pipeline](https://learn.breqwatr.cloud/tutorials/deploy-from-pipeline/) on learn.breqwatr.cloud. Follow the page: it explains each file and the order to run things in.
 
 The files you commit to your own Gitea repository: a small nginx instance and a Woodpecker pipeline that plans on pull requests and applies on merges to `main`, with OpenTofu state in PostgreSQL.
 
