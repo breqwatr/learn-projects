@@ -1,6 +1,6 @@
 # learn-projects
 
-The code for the tutorials and How-to pages on [learn.breqwatr.cloud](https://learn.breqwatr.workers.dev/), the Breqwatr Cloud training course and documentation. Every file here is the code a tutorial page shows, and every release was run end to end on Breqwatr Cloud before it was tagged.
+The code for the tutorials and How-to pages on [the Breqwatr Cloud learning site](https://learn.breqwatr.workers.dev/), the Breqwatr Cloud training course and documentation. Every file here is the code a tutorial page shows, and every release was run end to end on Breqwatr Cloud before it was tagged.
 
 | Tutorial | Page | Code |
 | --- | --- | --- |
