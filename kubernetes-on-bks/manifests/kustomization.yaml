@@ -1,0 +1,16 @@
+namespace: shop
+
+resources:
+  - namespace.yaml
+  - db.yaml
+  - app.yaml
+
+configMapGenerator:
+  - name: shop-app
+    files:
+      - app.py
+
+secretGenerator:
+  - name: shop-db
+    envs:
+      - db.env
