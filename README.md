@@ -18,6 +18,11 @@ The code for How-to pages lives under `how-to/<area>/<slug>/`:
 
 | How-to | Code |
 | --- | --- |
+| [Add a network interface](https://learn.breqwatr.cloud/how-to/networking/add-a-network-interface/) | [`how-to/networking/add-a-network-interface/`](how-to/networking/add-a-network-interface/) |
+| [cloudbase-init](https://learn.breqwatr.cloud/how-to/windows/cloudbase-init/) | [`how-to/windows/cloudbase-init/`](how-to/windows/cloudbase-init/) |
+| [Gateway API](https://learn.breqwatr.cloud/how-to/kubernetes/gateway-api/) | [`how-to/kubernetes/gateway-api/`](how-to/kubernetes/gateway-api/) |
+| [Cluster autoscaling](https://learn.breqwatr.cloud/how-to/kubernetes/cluster-autoscaling/) | [`how-to/kubernetes/cluster-autoscaling/`](how-to/kubernetes/cluster-autoscaling/) |
+| [Horizontal pod autoscaling](https://learn.breqwatr.cloud/how-to/kubernetes/horizontal-pod-autoscaling/) | [`how-to/kubernetes/horizontal-pod-autoscaling/`](how-to/kubernetes/horizontal-pod-autoscaling/) |
 | [Self-hosted VPN with WireGuard](https://learn.breqwatr.cloud/how-to/remote-access/self-hosted-vpn/) | [`how-to/remote-access/self-hosted-vpn/`](how-to/remote-access/self-hosted-vpn/) |
 
 ## Using it
