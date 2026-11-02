@@ -4,7 +4,7 @@
   vars_files:
     - vars.yml
   tasks:
-    - name: Delete the instances, with their root volumes and floating IPs
+    - name: Delete the instances, with their boot volumes and floating IPs
       openstack.cloud.server:
         cloud: "{{ cloud }}"
         name: "{{ item }}"

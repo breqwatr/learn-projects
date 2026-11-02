@@ -11,7 +11,7 @@ variable "flavour" {
 }
 
 variable "volume_size" {
-  description = "Root volume size in GB"
+  description = "Boot volume size in GB"
   type        = number
 }
 
